@@ -1,19 +1,17 @@
-document.getElementById("haha").innerHTML = "Hello JavaScript";
-var numMovies;
-var keyworks = [];
+let numMovies;
+let keyworks = [];
 
-var value;   
+const radioButtons = document.querySelectorAll('input[name="num"]');
 
-document.getElementById('next').onclick = function() {
-    value = document.querySelector( 'input[name="num"]:checked');
-    numMovies = value.value;
+function getNum() {
+    if(document.getElementById("1").checked){
+        numMovies = 1;
+    }
+    if(document.getElementById("2").checked){
+        numMovies = 2;
+    }
+    if(document.getElementById("4").checked){
+        numMovies = 3;
+    }
     alert("there are " + numMovies);
- }​;​
-
-function chooseNum(num){
-    numMovies = num;
-}
-
-function showNum(){
-    alert("You chose " + numMovies + " movies.");
-}
+ }​
