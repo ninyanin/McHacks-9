@@ -10,10 +10,10 @@
     <body>
         <script src="../Back-end/control.js"></script>
 
-        <h1> Welcome </h1>
+        <h1> Choose Me a Movie </h1>
         
         <div class="question2" id="question">
-            <label class="center">When should the movie have been released? <br> (Select all that apply)</label> <br> <br>
+            <label class="center">When should the movie have been released? <br> (Select all that apply)</label> <br>
             <form class="checkboxes" id="checkboxes">
                 <label class="left"><input type="checkbox">2020s</label><br>
                 <label class="left"><input type="checkbox">2010s</label><br>
@@ -23,9 +23,10 @@
                 <label class="left"><input type="checkbox">Before 1980</label><br>
                 <label class="left"><input type="checkbox">Don't care</label>
             </form>
-            
-            <button id="previous" type="submit" onclick="document.location='./hquestions1.html'">Previous</button>
-            <button id="next" type="submit" onclick="document.location='./hquestion3.html'">Next</button>
+           
         </div>
+
+        <button id="previous" type="submit" style="margin-top: 10px;" onclick="document.location='./hquestion1.html'">Previous</button>
+        <button id="next" type="submit" style="margin-top: -50px; position: block;" onclick="document.location='./hquestion3.html'">Next</button>
     
 </html>
