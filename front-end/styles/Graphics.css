@@ -11,14 +11,15 @@ h1{
     font-family: "Oswald", sans-serif;
 }
 #question{
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     font-family: "Oswald", sans-serif;
 }
 #next{
     margin-top: 70px;
     font-size: 30px;
-    margin-left: 47%;
+    margin-left: 90%;
+    display: block;
     font-family: "Oswald", sans-serif;
 }
 #previous{
@@ -40,7 +41,7 @@ h1{
     height: 30%;
 }
 #checkboxes{
-    font-size: 40px;
+    font-size: 30px;
     margin-left: 500px;
     text-align: left;
     font-family: "Oswald", sans-serif;
