@@ -4,7 +4,8 @@
 //options = {"primary_release_year":2010}
 
 function getChoices() {
-    options = {};
+    //options = {};
+    options = {"vote_count.gte" : 250};
     options.primary_release_year = 2013;
     options.with_genres = 16;
     options.watch_region = "CA";
@@ -16,7 +17,7 @@ function getChoices() {
 function successFunction(result){
     data = JSON.parse(result);
     alert(result);
-    console.log();
+    console.log(result);
 }
 
 function errorFunction(result){
