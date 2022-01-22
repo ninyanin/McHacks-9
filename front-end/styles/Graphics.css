@@ -25,6 +25,7 @@ h1{
 #previous{
     font-size: 30px;
     font-family: "Oswald", sans-serif;
+    display: block;
 }
 .add1{
     margin-top: 50px;
