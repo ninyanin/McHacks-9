@@ -14,12 +14,15 @@ h1{
     font-size: 50px;
     text-align: center;
     font-family: "Oswald", sans-serif;
-
 }
 #next{
     margin-top: 70px;
     font-size: 30px;
     margin-left: 47%;
+    font-family: "Oswald", sans-serif;
+}
+#previous{
+    font-size: 30px;
     font-family: "Oswald", sans-serif;
 }
 .add1{
@@ -44,13 +47,12 @@ h1{
 }
 #subquestion{
     font-size: 20px;
-    text-align: left;
-    margin-left: 450px;
+    text-align: center;
     font-family: "Oswald", sans-serif;
 }
 #subcheckboxes{
     font-size: 20px;
-    margin-left: 200px;
+    margin-left: 550px;
     text-align: left;
     font-family: "Oswald", sans-serif;
 }
