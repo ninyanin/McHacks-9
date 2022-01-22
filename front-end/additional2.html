@@ -3,11 +3,16 @@
     <link href="/Users/n.nninnn/Desktop/McHacks-9/front-end/styles/Graphics.css" rel="stylesheet" type="text/css" >
     <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
     <main>
-        <form class="add2" id="question" action="_blank">
-            <label>Do you want to watch a movie with a specific actor?</label> <br>
-            <input type="radio"> Yes</label><br>
-            <input type="radio">No</label><br>
+        <label>Do you want to watch a movie with a specific actor?</label> <br>
+            <input for="yes"><input id="yes" value="yes" type="radio" name="addd2"> Yes</label><br>
+            <input  for="no"><input id="no" value="yes" type="radio" name="addd2">No</label><br>
         </form>
+        <form class="add2" id="question" action="_blank">
+            <label>If yes, please specify the name of the actor</label> <br>
+            <textarea id="movie" type="text" placeholder="Please enter an actor"></textarea>
+        </form>
+        
+        
         
         <button id="next" type="submit" onclick="document.location='another html page.html'">Next</button>
 
