@@ -38,13 +38,11 @@ h1{
 }
 #subquestion{
     font-size: 20px;
-    text-align: left;
-    margin-left: 450px;
+    text-align: center;
     font-family: "Oswald", sans-serif;
 }
 #subcheckboxes{
     font-size: 20px;
-    margin-left: 0px;
-    text-align: left;
+    text-align: center;
     font-family: "Oswald", sans-serif;
 }
