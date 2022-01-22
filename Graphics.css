@@ -3,7 +3,7 @@ body {
     font-family: monospace;
   }
 h1{
-    color: #0000ff;
+    color: black;
     font-size: 80px;
     text-align: center;
     display: block;
@@ -17,6 +17,6 @@ h1{
 }
 #next{
     font-size: 30px;
-    margin-left: 520px;
+    margin-left: 550px;
     font-family: "Oswald", sans-serif;
 }
