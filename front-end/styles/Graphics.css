@@ -35,7 +35,14 @@ h1{
     font-family: "Oswald", sans-serif;
 }
 #subquestion{
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+#subcheckboxes{
+    
+    font-size: 20px;
+    margin-left: 500px;
+    text-align: left;
     font-family: "Oswald", sans-serif;
 }
