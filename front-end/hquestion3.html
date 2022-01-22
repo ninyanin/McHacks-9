@@ -16,16 +16,17 @@
             <form class="checkboxes" id="checkboxes">
                 <label class="left"><input type="checkbox">Theatres</label><br>
                 <label class="left"><input type="checkbox">Streaming</label><br>
-                <div class="subquestion" id="subquestion">
-                    <label class="center">Which streaming services do you have? <br> (Select all that apply) </label> <br> <br>
-                    <form class="checkboxes" id="subcheckboxes">
-                        <label class="left"><input type="checkbox">Netflix</label><br>
-                        <label class="left"><input type="checkbox">Amazon Prime</label>
-                    </form>
-                </div>
-                <label class="left"><input type="checkbox">DVD</label>
+                <label class="left"><input type="checkbox">DVD</label> <br>
             </form>
             
+            <div class="subquestion" id="subquestion">
+                <label class="center">Which streaming services do you have? <br> (Select all that apply) </label> <br> <br>
+                <form class="subcheckboxes" id="subcheckboxes">
+                    <label class="left"><input type="checkbox">Netflix</label><br>
+                    <label class="left"><input type="checkbox">Amazon Prime</label>
+                </form>
+            </div>
+
             <button id="next" type="submit" onclick="document.location='./hquestion4.html'">Next</button>
         </div>
     
