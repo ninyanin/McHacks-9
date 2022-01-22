@@ -16,6 +16,7 @@ function getChoices() {
 function successFunction(result){
     data = JSON.parse(result);
     alert(result);
+    console.log();
 }
 
 function errorFunction(result){

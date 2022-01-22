@@ -1,6 +1,7 @@
 var numMovie;
 var keywords = [];
 var temp;
+var dates = [];
 
 function numMov(){
 numMovie = document.querySelector('input[name="num"]:checked').value;
@@ -13,4 +14,6 @@ function genre() {
         keywords.push(temp);
         console.log(keywords);
     }
+function getDate(){
+    dates.push()
 }
