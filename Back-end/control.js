@@ -14,6 +14,4 @@ function genre() {
         keywords.push(temp);
         console.log(keywords);
     }
-function getDate(){
-    dates.push()
 }
