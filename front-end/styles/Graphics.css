@@ -18,6 +18,31 @@ h1{
 }
 #next{
     font-size: 30px;
-    margin-left: 550px;
+    margin-left: 530px;
+    font-family: "Oswald", sans-serif;
+}
+.add1{
+    margin-top: 100px;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+}
+#movie{
+}
+#checkboxes{
+    font-size: 40px;
+    margin-left: 500px;
+    text-align: left;
+    font-family: "Oswald", sans-serif;
+}
+#subquestion{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+#subcheckboxes{
+    
+    font-size: 20px;
+    margin-left: 500px;
+    text-align: left;
     font-family: "Oswald", sans-serif;
 }
