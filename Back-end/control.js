@@ -1,12 +1,12 @@
-document.getElementById("haha").innerHTML = "Hello JavaScript";
 var numMovies;
 var keyworks = [];
 
-var value;   
+var ddhd;   
 
-document.getElementById('next').onclick = function() {
-    value = document.querySelector( 'input[name="num"]:checked');
-    numMovies = value.value;
+document.getElementById('next').onclick = 'getNum()';
+function getNum() {
+    ddhd = document.querySelector( 'input[name="num"]:checked');
+    numMovies = ddhd.value;
     alert("there are " + numMovies);
  }​;​
 
