@@ -1,0 +1,23 @@
+
+body {
+    background: linear-gradient(80deg, #F9B1F8 20%, #66BACE 80%);
+    font-family: monospace;
+  }
+h1{
+    color: black;
+    font-size: 80px;
+    text-align: center;
+    display: block;
+    font-family: "Oswald", sans-serif;
+}
+#question{
+    font-size: 50px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+
+}
+#next{
+    font-size: 30px;
+    margin-left: 550px;
+    font-family: "Oswald", sans-serif;
+}
