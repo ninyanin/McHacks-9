@@ -15,3 +15,11 @@ function genre() {
         console.log(keywords);
     }
 }
+
+function getDate() {
+    if (document.getElementByName("date").checked) {
+        temp.document.getElementByName("name").value;
+        dates.push(temp);
+        console.log(temp);
+    }
+}
