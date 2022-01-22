@@ -27,5 +27,10 @@ h1{
     font-size: 50px;
 }
 #movie{
-    
+}
+#checkboxes{
+    font-size: 40px;
+    margin-left: 500px;
+    text-align: left;
+    font-family: "Oswald", sans-serif;
 }

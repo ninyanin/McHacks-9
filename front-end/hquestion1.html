@@ -11,14 +11,18 @@
 
         <h1> Welcome </h1>
         
-        <form class="question1" id="question">
-            <label class="center">Which genres are you interested in? (Select all that apply)</label> <br>
-            <label class="center"><input type="checkbox">Action</label><br>
-            <label class="center"><input type="checkbox">Comedy</label><br>
-            <label class="center"><input type="checkbox">Drama</label><br>
-            <label class="center"><input type="checkbox">Romance</label><br>
-            <label class="center"><input type="checkbox">Mystery</label><br>
-            <label class="center"><input type="checkbox">Horror</label>
-        </form>
+        <div class="question1" id="question">
+            <label class="center">Which genres are you interested in? <br> (Select all that apply)</label> <br> <br>
+            <form class="checkboxes" id="checkboxes">
+                <label class="left"><input type="checkbox">Action</label><br>
+                <label class="left"><input type="checkbox">Comedy</label><br>
+                <label class="left"><input type="checkbox">Drama</label><br>
+                <label class="left"><input type="checkbox">Romance</label><br>
+                <label class="left"><input type="checkbox">Mystery</label><br>
+                <label class="left"><input type="checkbox">Horror</label>
+            </form>
+            
+            <button id="next" type="submit" onclick="document.location='./hquestion2.html'">Next</button>
+        </div>
     
 </html>
