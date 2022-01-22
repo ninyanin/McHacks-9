@@ -14,11 +14,14 @@
     <main>
         <form class="question1" id="question" action="_blank">
             <label class="center">How many movies do you want?</label> <br>
-            <label class="center"><input id="1" name="num"  type="radio" value=1 onchange="getValue(this)">1</label><br>
-            <label class="center"><input id="2" name="num"  type="radio" value=2 onchange="getValue(this)">2</label><br>
-            <label class="center"><input id="3" name="num"  type="radio" value=3 onchange="getValue(this)">3</label>
+            <label class="center"><input id="1" name="num"  type="radio" onchange="het()" value = "1">1</label><br>
+            <label class="center"><input id="2" name="num"  type="radio" onchange="het()" value = "2">2</label><br>
+            <label class="center"><input id="3" name="num"  type="radio" onchange="het()" value = "3">3</label>
         </form>
         <button id="next" type="submit" onclick= "document.location='./hquestion1.html'">Next</button>
        
     </main>
+  
+    <script src="../Back-end/control.js">
+    </script>
 </html>
