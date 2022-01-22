@@ -8,5 +8,5 @@ console.log(numMovie);
 }
 
 function getDate(){
-
+    dates.push()
 }
