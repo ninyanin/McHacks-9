@@ -18,7 +18,7 @@ h1{
 }
 #next{
     font-size: 30px;
-    margin-left: 530px;
+    margin-left: 50%;
     font-family: "Oswald", sans-serif;
 }
 .add1{
@@ -27,6 +27,8 @@ h1{
     font-size: 50px;
 }
 #movie{
+    width: 40%;
+    height: 30%;
 }
 #checkboxes{
     font-size: 40px;
