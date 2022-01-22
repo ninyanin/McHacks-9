@@ -17,11 +17,17 @@ h1{
 
 }
 #next{
+    margin-top: 70px;
     font-size: 30px;
-    margin-left: 50%;
+    margin-left: 47%;
     font-family: "Oswald", sans-serif;
 }
 .add1{
+    margin-top: 50px;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+}
+.add2{
     margin-top: 100px;
     font-family: "Oswald", sans-serif;
     font-size: 50px;
