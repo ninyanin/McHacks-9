@@ -1,4 +1,5 @@
-alert("helooo");
+
+var document = "./welcome page.html";
 
 function checkBoxCheck() {
     // Get the checkbox
