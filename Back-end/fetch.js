@@ -7,7 +7,7 @@ function getChoices() {
     //options = {};
     options = {"vote_count.gte" : 250};
     options.primary_release_year = 2013;
-    options.with_genres = 16;
+    options.with_genres = 16, 12;
     options.watch_region = "CA";
     options.with_watch_providers = 8;
     theMovieDb.discover.getMovies(options, successFunction, errorFunction);
@@ -16,7 +16,7 @@ function getChoices() {
 
 function successFunction(result){
     data = JSON.parse(result);
-    alert(result);
+    //alert(result);
     console.log(result);
 }
 
