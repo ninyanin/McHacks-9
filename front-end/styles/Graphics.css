@@ -18,8 +18,15 @@ h1{
 }
 #next{
     font-size: 30px;
-    margin-left: 550px;
+    margin-left: 530px;
     font-family: "Oswald", sans-serif;
+}
+.add1{
+    margin-top: 100px;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+}
+#movie{
 }
 #checkboxes{
     font-size: 40px;
