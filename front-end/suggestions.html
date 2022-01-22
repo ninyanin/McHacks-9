@@ -10,8 +10,24 @@
     <body>
         <script src="../Back-end/control.js"></script>
 
-        <h1> Choose Me a Movie </h1>
+        <h1> Movies Have Been Chosen </h1>
 
+        <div class="suggestions" id="question">
+            <label class="center">Here are your suggestions! </label> <br>
+            <form class="suggestion" id="suggestion">
+                <label class="center">Suggestion 1 </label> <br>
+                <img id="suggestion1" src="https://m.media-amazon.com/images/M/MV5BMTA1NDQ3NTcyOTNeQTJeQWpwZ15BbWU3MDA0MzA4MzE@._V1_.jpg" 
+                alt="Suggestion 1"><br>
+                <label class="left" id="title">Title: </label><br>
+                <label class="left" id="date">Release date: </label><br>
+                <label class="left" id="genre">Genre: </label><br>
+                <label class="left" id="overview">Overview: </label>
+            </form>
+
+        </div>
+
+        <button id="previous" type="submit" style="margin-top: -90px; " onclick="document.location='./hquestion4.html'">Previous</button>
+    </body>
         
     
 </html>
