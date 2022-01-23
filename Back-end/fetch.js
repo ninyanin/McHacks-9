@@ -58,10 +58,10 @@ function getChoices() {
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
     options["primary_release_date.gte"] = "1990-01-01";
     //chosenGenres = localStorage.getItem("genres");
-    options.with_genres = 16;             //list of genres
+    options.with_genres = parseInt(localStorage.getItem('genre'),10);             //list of genres
     //options.with_genres = [10749 || 16 || 12];           //list of genres
     options.watch_region = "CA";       
-    options.with_watch_providers = 8;               //list of streaming services (see discord #back end for IDs) 
+    options.with_watch_providers = parseInt(localStorage.getItem('stream'),10);               //list of streaming services (see discord #back end for IDs) 
     //options.with_watch_providers = [8 || 9];               //list of streaming services (see discord #back end for IDs) 
     theMovieDb.discover.getMovies(options, successFunction, errorFunction);
 }
