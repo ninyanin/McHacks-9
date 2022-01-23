@@ -2,6 +2,7 @@ var numMovie;
 var genres = [];
 var checkboxes;
 var dates = [];
+var watchOps = [];
 var streaming = [];
 
 function numMov(){
@@ -57,20 +58,35 @@ function getDate() {
     console.log(dates);
 }
 
-    function getStream() {
-        if (document.getElementById("theaters").checked) {
-            temp=document.getElementById("theaters").value;
-            streaming.push(temp);
-        }
-    
-        if (document.getElementById("netflix").checked) {
-            temp=document.getElementById("netflix").value;
-            streaming.push(temp);
-        }
-    
-        if (document.getElementById("dvd").checked) {
-            temp=document.getElementById("dvd").value;
-            streaming.push(temp);
-        }
-        console.log(streaming);
+function getWatchOp() {
+    if (document.getElementById("theaters").checked) {
+        temp=document.getElementById("theaters").value;
+        watchOps.push(temp);
     }
+
+    if (document.getElementById("netflix").checked) {
+        temp=document.getElementById("netflix").value;
+        watchOps.push(temp);
+    }
+
+    if (document.getElementById("dvd").checked) {
+        temp=document.getElementById("dvd").value;
+        watchOps.push(temp);
+    }
+    console.log(watchOps);
+}
+
+function getStream() {
+    if (document.getElementById("netflix").checked) {
+        temp=document.getElementById("netflix").value;
+        streaming.push(temp);
+    }
+
+    if (document.getElementById("amazon").checked) {
+        temp=document.getElementById("amazon").value;
+        streaming.push(temp);
+    }
+    console.log(streaming);
+}
+  
+

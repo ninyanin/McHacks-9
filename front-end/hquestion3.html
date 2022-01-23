@@ -23,14 +23,14 @@
             <div class="subquestion" id="subquestion">
                 <label class="center">Which streaming services do you have? <br> (Select all that apply) </label> <br>
                 <form class="subcheckboxes" id="subcheckboxes">
-                    <label class="left"><input type="checkbox">Netflix</label><br>
-                    <label class="left"><input type="checkbox">Amazon Prime</label>
+                    <label class="left"><input type="checkbox" id="netflix" value="Netlfix">Netflix</label><br>
+                    <label class="left"><input type="checkbox" id="amazon" value="Amazon Prime">Amazon Prime</label>
                 </form>
             </div>
             
         </div>
 
         <button id="previous" type="submit" style="margin-top: 20px;" onclick="document.location='./hquestion2.html'">Previous</button>
-        <button id="next" type="submit" style="margin-top: -50px; position: block;" onclick="document.location='./hquestion4.html'; getStream()">Next</button>
+        <button id="next" type="submit" style="margin-top: -50px; position: block;" onclick="document.location='./hquestion4.html'; getWatchOp() ; getStream()">Next</button>
     
 </html>
