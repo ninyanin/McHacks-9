@@ -98,7 +98,26 @@ function successFunction(movies){
     document.getElementById("suggestion1").src = poster;
     document.getElementById("title").innerText = title;
     document.getElementById("date").innerText = releaseDate;
-    document.getElementById("genre").innerText = genreID;
+    temp = parseInt(localStorage.getItem("genre"),10);
+    var genreee;
+    if(temp == 28){
+        genreee = "Action";
+    }else if(temp == 35){
+        genreee == "Comedy";
+    }else if(temp == 18){
+        genreee = "Drama";
+    }else if(temp == 10749){
+        genreee = "Romance";
+    }else if(temp == 9648){
+        genreee = "Mystery";
+    }else if(temp == 14){
+        genreee = "Fantasy";
+    }else if(temp == 27){
+        genreee = "Horror";
+    }else{
+        genreee = "Nice Genre";
+    }
+    document.getElementById("genre").innerText = genreee;
     document.getElementById("overview").innerText = overview;
 
     //alert(result);
