@@ -1,5 +1,6 @@
 var numMovie = 0; 
 var genres = [];
+localStorage.setItem("genres", []);
 var checkboxes;
 var dates = [];
 var streaming = [];
@@ -25,48 +26,36 @@ function genre() {
             genres.push(checkboxes[i].value);
         }
     }
+    localStorage.setItem("genres", genres);
     console.log(localStorage.getItem("numMovie"));
+    console.log(localStorage.getItem("genres"));
 }
 
-function getDate() {
-    if (document.getElementById("2020").checked) {
-        temp = document.getElementById("2020").value;
-        dates.push(temp);
+function date() {
+    da = document.getElementsByName('date');
+    for (var i = 0, n = da.length; i < n; i++) {
+        if (da[i].checked) {
+            dates.push(da[i].value);
+        }
     }
-
-    if (document.getElementById("2010").checked) {
-        temp = document.getElementById("2010").value;
-        dates.push(temp);
-    }
-
-    if (document.getElementById("2000").checked) {
-        temp = document.getElementById("2000").value;
-        dates.push(temp);
-    }
-
-    if (document.getElementById("1990").checked) {
-        temp = document.getElementById("1990").value;
-        dates.push(temp);
-    }
-
-    if (document.getElementById("1980").checked) {
-        temp = document.getElementById("1980").value;
-        dates.push(temp);
-    }
-
-    if (document.getElementById("before").checked) {
-        temp = document.getElementById("before").value;
-        dates.push(temp);
-    }
-
-    if (document.getElementById("dc").checked) {
-        temp = document.getElementById("dc").value;
-        dates.push(temp);
-    }
-
-    console.log(dates);
-
+    localStorage.setItem("dates", dates);
+    console.log(localStorage.getItem("numMovie"));
+    console.log(localStorage.getItem("genres"));
+    console.log(localStorage.getItem("dates"));
 }
+
+function formatType(){
+    opp = document.getElementsByName('op');
+    for (var i = 0, n = opp.length; i < n; i++) {
+        if (opp[i].checked) {
+            watchOps.push(opp[i].value);
+        }
+    }
+    localStorage.setItem("watchOps", watchOps);
+    console.log(localStorage.getItem("genres"));
+    console.log(localStorage.getItem("dates"));
+}
+
 
 function getStream() {
     if (document.getElementById("netflix").checked) {
