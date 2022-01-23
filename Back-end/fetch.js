@@ -10,12 +10,13 @@ function getChoices() {
     options.with_original_language = "en";
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
     chosenGenres = localStorage.getItem("genres");
-    options.with_genres = [10749 || 16 || 12];             //list of genres
+    //options.with_genres = [10749 || 16 || 12];             //list of genres
     //options.with_genres = [10749 || 16 || 12];           //list of genres
     options.watch_region = "CA";       
     options.with_watch_providers = [8 || 9];               //list of streaming services (see discord #back end for IDs) 
     theMovieDb.discover.getMovies(options, successFunction, errorFunction);
 }
+
 // "genres" "rate" "streaming" "date"
 //localStorage.getItem("genres")
 function successFunction(movies){
@@ -24,6 +25,8 @@ function successFunction(movies){
     console.log(length);
     //length = Object.keys(movies).length;
     movieNumber = Math.floor(Math.random() * (length/10));
+    console.log(movieNumber);
+
     //console.log(movies);
     //console.log(movieNumber);
     //console.log(movies.results[movieNumber]);
@@ -33,11 +36,11 @@ function successFunction(movies){
     genreID = movies.results[movieNumber].genre_ids[0];
     overview = movies.results[movieNumber].overview;    
     
-    console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview),
+    console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview);
 
-    document.getElementById("title").innerHTML = title;
-    document.getElementById("suggestion1").src.innerHTML = poster;
-    document.getElementById("overview").innerHTML = overview;
+    document.getElementById("title").innerText = title;
+    document.getElementById("genre").innerText = genreID;
+    document.getElementById("overview").innerText = overview;
 
     //alert(result);
     //console.log(result);
