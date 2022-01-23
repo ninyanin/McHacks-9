@@ -2,7 +2,7 @@
 //const base_url = 'https://api.themoviedb.org/3/discover/movie/';
 //const api_url = base_url + "?api_key=" + api_key;
 //options = {"primary_release_year":2010}
-const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
+//const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
 
 function getChoices() {
     options = {};
@@ -42,7 +42,6 @@ function successFunction(movies){
 function errorFunction(result){
     alert("error");
 }
-
 /*if (releaseYear){
     api_url += ""
 }
