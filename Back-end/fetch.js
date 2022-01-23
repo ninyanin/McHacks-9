@@ -16,6 +16,7 @@ function getChoices() {
     options.with_watch_providers = [8 || 9];               //list of streaming services (see discord #back end for IDs) 
     theMovieDb.discover.getMovies(options, successFunction, errorFunction);
 }
+
 // "genres" "rate" "streaming" "date"
 //localStorage.getItem("genres")
 function successFunction(movies){
@@ -24,6 +25,7 @@ function successFunction(movies){
     console.log(length);
     //length = Object.keys(movies).length;
     movieNumber = Math.floor(Math.random() * (length/10));
+
     //console.log(movies);
     //console.log(movieNumber);
     //console.log(movies.results[movieNumber]);
@@ -33,7 +35,7 @@ function successFunction(movies){
     genreID = movies.results[movieNumber].genre_ids[0];
     overview = movies.results[movieNumber].overview;    
     
-    console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview),
+    console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview);
 
     document.getElementById("title").innerText = title;
     document.getElementById("suggestion1").src.innerText = poster;
