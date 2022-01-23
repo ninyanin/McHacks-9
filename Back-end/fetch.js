@@ -86,12 +86,16 @@ function successFunction(movies){
     //console.log(movieNumber);
     //console.log(movies.results[movieNumber]);
 
-    rating = movies.results[movieNumber].vote_average;
+    try {rating = movies.results[movieNumber].vote_average;
     title = movies.results[movieNumber].title;
     poster = "https://image.tmdb.org/t/p/w400"+movies.results[movieNumber].poster_path;
     releaseDate = movies.results[movieNumber].release_date;
     genreID = movies.results[movieNumber].genre_ids[0];
-    overview = movies.results[movieNumber].overview;    
+    overview = movies.results[movieNumber].overview;    }
+    catch(err){
+        document.location=("welcome page.html");
+        alert("Sorry, no movie found for your criteria!")
+    }
     
     console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview);
 
