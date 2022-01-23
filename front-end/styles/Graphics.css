@@ -73,9 +73,11 @@ input[type=radio] {
     color:darkviolet;
 }
 #suggestionText{
-    font-size: 20px;
+    font-size: 35px;
     text-align: left;
-    margin-left: 400px;
+    margin-left: 500px;
+    margin-right: 100px;
+    margin-top: -450px;
     font-family: "Oswald", sans-serif;
     color:darkviolet;
 }
@@ -83,11 +85,18 @@ input[type=radio] {
     font-size: 30px;
     font-family: "Oswald", sans-serif;
     margin-left: 40px;
+    margin-top: 100px;
 }
 #random{
     font-size: 30px;
     font-family: "Oswald", sans-serif;
-    margin-left: 820px;
-    margin-top: -100px;
+    margin-left: 800px;
+    position: block;
+    margin-top: 30px;
+}
+#suggestion1{
+    position: block;
+    margin-top: 10px;
+    margin-right: 800px;
 }
 
