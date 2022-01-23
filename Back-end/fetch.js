@@ -86,10 +86,6 @@ function successFunction(movies){
     //console.log(movieNumber);
     //console.log(movies.results[movieNumber]);
 
-    function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
-      }      
-
     try {rating = movies.results[movieNumber].vote_average;
     title = movies.results[movieNumber].title;
     poster = "https://image.tmdb.org/t/p/w400"+movies.results[movieNumber].poster_path;
@@ -98,7 +94,6 @@ function successFunction(movies){
     overview = movies.results[movieNumber].overview;    }
     catch(err){
         document.location=("welcome page.html");
-        sleep(10);
         alert("Sorry, no movie found for your criteria! Want to try again?")
     }
     
