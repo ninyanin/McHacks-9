@@ -38,7 +38,7 @@ function successFunction(movies){
     
     console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview);
 
-    document.getElementById("suggestion1").innerHTML.src = poster;
+    document.getElementById("suggestion1").innerText = poster;
     document.getElementById("title").innerText = title;
     document.getElementById("genre").innerText = genreID;
     document.getElementById("overview").innerText = overview;
