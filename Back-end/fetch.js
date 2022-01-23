@@ -29,10 +29,10 @@ function successFunction(movies){
     //console.log(movies.results[movieNumber]);
 
     const Result = {
-        title = movies.results[movieNumber].title,
-        poster = "https://image.tmdb.org/t/p/w500"+movies.results[movieNumber].poster_path,
-        genreID = movies.results[movieNumber].genre_ids[0],
-        overview = movies.results[movieNumber].overview,
+        title: movies.results[movieNumber].title,
+        poster: "https://image.tmdb.org/t/p/w500"+movies.results[movieNumber].poster_path,
+        genreID: movies.results[movieNumber].genre_ids[0],
+        overview: movies.results[movieNumber].overview,
     };
     
     console.log(Result.title+'\n'+Result.poster+'\n'+Result.genreID+'\n'+Result.overview),
