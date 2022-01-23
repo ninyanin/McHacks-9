@@ -115,7 +115,7 @@ function successFunction(movies){
     }else if(temp == 27){
         genreee = "Horror";
     }else{
-        genreee = "Nice Genre";
+        genreee = "Science Fiction";
     }
     document.getElementById("genre").innerText = genreee;
     document.getElementById("overview").innerText = overview;
