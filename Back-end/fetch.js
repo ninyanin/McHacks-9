@@ -46,7 +46,9 @@ function rottenTom() {
 
 function getChoices() {
     options = {};
-    options["vote_count.gte"] = 400;
+    if (localStorage.getItem('language') == 'en') {options["vote_count.gte"] = 300;}
+    else {options["vote_count.gte"] = 0;}
+    console.log(options["vote_count.gte"])
     options["vote_average.gte"] = 7;
     options.with_original_language = options.language = localStorage.getItem('language');
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
