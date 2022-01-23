@@ -4,11 +4,6 @@
 //options = {"primary_release_year":2010}
 //const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
 
-var language; 
-var genres = [];
-var dates = [];
-var streaming = [];
-
 function hideSub() {
     document.getElementById("subquestion1").style.visibility = "hidden";
 }
