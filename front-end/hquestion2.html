@@ -15,18 +15,18 @@
         <div class="question2" id="question">
             <label class="center">When should the movie have been released? <br> (Select all that apply)</label> <br>
             <form class="checkboxes" id="checkboxes">
-                <label class="left"><input type="checkbox" name="date" id="2020" onchange="getDate()" value="2020">2020s</label><br>
-                <label class="left"><input type="checkbox" name="date" id="2010" onchange="getDate()" value="2010">2010s</label><br>
-                <label class="left"><input type="checkbox" name="date" id="2000" onchange="getDate()" value="2000">2000s</label><br>
-                <label class="left"><input type="checkbox" name="date" id="1990" onchange="getDate()" value="1990">1990s</label><br>
-                <label class="left"><input type="checkbox" name="date" id="1980" onchange="getDate()" value="1980">1980s</label><br>
-                <label class="left"><input type="checkbox" name="date" id="before" onchange="getDate()" value="before 1980">Before 1980</label><br>
-                <label class="left"><input type="checkbox" name="date" id="dc" onchange="getDate()" value="">Don't care</label>
+                <label class="left"><input type="checkbox" name="date" id="2020" value="2020">2020s</label><br>
+                <label class="left"><input type="checkbox" name="date" id="2010" value="2010">2010s</label><br>
+                <label class="left"><input type="checkbox" name="date" id="2000" value="2000">2000s</label><br>
+                <label class="left"><input type="checkbox" name="date" id="1990" value="1990">1990s</label><br>
+                <label class="left"><input type="checkbox" name="date" id="1980" value="1980">1980s</label><br>
+                <label class="left"><input type="checkbox" name="date" id="before" value="before 1980">Before 1980</label><br>
+                <label class="left"><input type="checkbox" name="date" id="dc" value="">Don't care</label>
             </form>
            
         </div>
 
         <button id="previous" type="submit" style="margin-top: 10px;" onclick="document.location='./hquestion1.html'">Previous</button>
-        <button id="next" type="submit" style="margin-top: -50px; position: block;" onclick="document.location='./hquestion3.html'">Next</button>
+        <button id="next" type="submit" style="margin-top: -50px; position: block;" onclick="document.location='./hquestion3.html'; getDate()">Next</button>
     
 </html>
