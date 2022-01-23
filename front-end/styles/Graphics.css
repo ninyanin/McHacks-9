@@ -86,7 +86,7 @@ input[type=radio] {
     font-family: "Oswald", sans-serif;
     margin-left: 600px;
     margin-top: -400px;
-    position: block;
+    display: inline-block;
     align-self: left;
     margin-top: 70px;
     margin-left: 40px;
