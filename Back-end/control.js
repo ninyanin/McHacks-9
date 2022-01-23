@@ -1,6 +1,6 @@
 var numMovie;
-var keywords = [];
-var temp;
+var genres = [];
+var checkboxes;
 var dates = [];
 
 function numMov(){
@@ -9,9 +9,10 @@ console.log(numMovie);
 }
 
 function genre() {
-    if (document.getElementById('action').checked) {
-        temp = document.getElementById('action').value;
-        keywords.push(temp);
-        console.log(keywords);
+    checkboxes = document.getElementsByName('genre');
+    for(var i=0, n=checkboxes.length;i<n;i++){
+        if(checkboxes[i].checked){
+            genres.push(checkboxes[i].value);
+        }
     }
 }
