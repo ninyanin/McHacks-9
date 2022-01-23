@@ -44,6 +44,7 @@ function successFunction(movies){
     document.getElementById("title").innerText = title;
     document.getElementById("genre").innerText = genreID;
     document.getElementById("overview").innerText = overview;
+    document.getElementById("poster").innerText = poster;
 
     //alert(result);
     //console.log(result);
