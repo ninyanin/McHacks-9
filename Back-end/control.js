@@ -2,7 +2,6 @@ var numMovie = 0;
 var genres = [];
 var checkboxes;
 var dates = [];
-var watchOps = [];
 var streaming = [];
 var rating;
 
@@ -66,24 +65,7 @@ function getDate() {
     }
 
     console.log(dates);
-}
 
-function getWatchOp() {
-    if (document.getElementById("theaters").checked) {
-        temp=document.getElementById("theaters").value;
-        watchOps.push(temp);
-    }
-
-    if (document.getElementById("streaming").checked) {
-        temp=document.getElementById("streaming").value;
-        watchOps.push(temp);
-    }
-
-    if (document.getElementById("dvd").checked) {
-        temp=document.getElementById("dvd").value;
-        watchOps.push(temp);
-    }
-    console.log(watchOps);
 }
 
 function getStream() {
