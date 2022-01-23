@@ -25,7 +25,7 @@ function genre() {
     }
     localStorage.setItem("genres", genres);
     console.log(localStorage.getItem("numMovie"));
-    console.log(localStorage.getItem("genres"));
+    console.log(localStorage.getItem("genres")[1]);
 }
 
 function date() {
@@ -38,7 +38,7 @@ function date() {
     localStorage.setItem("dates", dates);
     console.log(localStorage.getItem("genres"));
     console.log(localStorage.getItem("numMovie"));
-    console.log(localStorage.getItem("dates"));
+    console.log(localStorage.getItem("dates")[0]);
 }
 
 function getStream() {
