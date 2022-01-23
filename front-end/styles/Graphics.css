@@ -84,20 +84,25 @@ input[type=radio] {
 #previous1{
     font-size: 30px;
     font-family: "Oswald", sans-serif;
-    margin-left: 40px;
-    margin-right: 750px;
-    margin-top: 100px;
+    margin-left: 700px;
+    margin-top: -400px;
+    position: block;
     align-self: left;
+    margin-top: 70px;
+    margin-left: 40px;
 }
 #random{
     font-size: 30px;
     font-family: "Oswald", sans-serif;
-    margin-left: 700px;
-    position: block;
+    margin-left: 900px;
+    
     margin-top: 30px;
     align-self: right;
+    margin-top: 70px;
+    margin-left: 90%;
+    text-align: right;
 }
-#suggestion1{
+#suggestion1{ 
     position: block;
     margin-top: 10px;
     margin-right: 750px;
