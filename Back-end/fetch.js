@@ -79,7 +79,7 @@ function successFunction(movies){
     //console.log(movies.results[movieNumber]);
 
     title = movies.results[movieNumber].title;
-    poster = "https://image.tmdb.org/t/p/w500"+movies.results[movieNumber].poster_path;
+    poster = "https://image.tmdb.org/t/p/w400"+movies.results[movieNumber].poster_path;
     releaseDate = movies.results[movieNumber].release_date;
     genreID = movies.results[movieNumber].genre_ids[0];
     overview = movies.results[movieNumber].overview;    
