@@ -33,11 +33,11 @@ function successFunction(movies){
         overview = movies.results[movieNumber].overview,
     };
     
-    //console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview),
+    console.log(Result.title+'\n'+Result.poster+'\n'+Result.genreID+'\n'+Result.overview),
 
-    //document.getElementById("title").innerHTML = title;
-    //document.getElementById("suggestion1").src.innerHTML = poster;
-    //document.getElementById("overview").innerHTML = overview;
+    document.getElementById("title").innerHTML = title;
+    document.getElementById("suggestion1").src.innerHTML = poster;
+    document.getElementById("overview").innerHTML = overview;
 
     //alert(result);
     //console.log(result);
