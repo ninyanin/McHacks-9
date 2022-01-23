@@ -9,11 +9,13 @@ function getChoices() {
     options["vote_count.gte"] = 400;
     options.with_original_language = "en";
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
-    chosenGenres = localStorage.getItem("genres");
-    //options.with_genres = [10749 || 16 || 12];             //list of genres
+    options["primary_release_date.gte"] = "1990-01-01";
+    //chosenGenres = localStorage.getItem("genres");
+    options.with_genres = 16;             //list of genres
     //options.with_genres = [10749 || 16 || 12];           //list of genres
     options.watch_region = "CA";       
-    options.with_watch_providers = [8 || 9];               //list of streaming services (see discord #back end for IDs) 
+    options.with_watch_providers = 8;               //list of streaming services (see discord #back end for IDs) 
+    //options.with_watch_providers = [8 || 9];               //list of streaming services (see discord #back end for IDs) 
     theMovieDb.discover.getMovies(options, successFunction, errorFunction);
 }
 
@@ -24,7 +26,7 @@ function successFunction(movies){
     length = movies.total_results;
     console.log(length);
     //length = Object.keys(movies).length;
-    movieNumber = Math.floor(Math.random() * (length/10));
+    movieNumber = Math.floor(Math.random() * (Math.min(20,length/10)));
     console.log(movieNumber);
 
     //console.log(movies);
@@ -33,6 +35,7 @@ function successFunction(movies){
 
     title = movies.results[movieNumber].title;
     poster = "https://image.tmdb.org/t/p/w500"+movies.results[movieNumber].poster_path;
+    releaseDate = movies.results[movieNumber].release_date;
     genreID = movies.results[movieNumber].genre_ids[0];
     overview = movies.results[movieNumber].overview;    
     
