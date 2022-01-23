@@ -3,8 +3,8 @@ var genres = [];
 localStorage.setItem("genres", []);
 var checkboxes;
 var dates = [];
-var watchOps = [];
 var streaming = [];
+var rating;
 
 function hideSub() {
     document.getElementById("subquestion1").style.visibility = "hidden";
@@ -55,3 +55,23 @@ function formatType(){
     console.log(localStorage.getItem("genres"));
     console.log(localStorage.getItem("dates"));
 }
+
+
+function getStream() {
+    if (document.getElementById("netflix").checked) {
+        temp=document.getElementById("netflix").value;
+        streaming.push(temp);
+    }
+
+    if (document.getElementById("amazon").checked) {
+        temp=document.getElementById("amazon").value;
+        streaming.push(temp);
+    }
+    console.log(streaming);
+}
+  
+function rottenTom() {
+    localStorage.setItem("rating", document.querySelector('input[name="rating"]:checked').value);
+    console.log(localStorage.getItem("rating"));
+}
+
