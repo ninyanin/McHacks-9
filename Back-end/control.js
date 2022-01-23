@@ -64,8 +64,8 @@ function getWatchOp() {
         watchOps.push(temp);
     }
 
-    if (document.getElementById("netflix").checked) {
-        temp=document.getElementById("netflix").value;
+    if (document.getElementById("streaming").checked) {
+        temp=document.getElementById("streaming").value;
         watchOps.push(temp);
     }
 
