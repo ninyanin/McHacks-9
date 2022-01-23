@@ -4,7 +4,7 @@
 //options = {"primary_release_year":2010}
 //const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
 
-var numMovie = 0; 
+var language; 
 var genres = [];
 var dates = [];
 var streaming = [];
@@ -17,9 +17,9 @@ function showSub() {
     document.getElementById("subquestion1").style.visibility = "visible";
 }
 
-function numMov() {
-    localStorage.setItem("numMovie", document.querySelector('input[name="num"]:checked').value);
-    console.log(localStorage.getItem("numMovie"));
+function language() {
+    localStorage.setItem("language", document.querySelector('input[name="num"]:checked').value);
+    console.log(localStorage.getItem("language"));
 }
 
 function genre() {
