@@ -38,7 +38,7 @@ function getStream() {
     console.log(localStorage.getItem("stream"));
 }
   
-function rottenTom() {
+function getRating() {
     localStorage.setItem("rating", document.querySelector('input[name="rating"]:checked').value);
     console.log(localStorage.getItem("rating"));
 }
@@ -48,8 +48,8 @@ function getChoices() {
     options = {};
     if (localStorage.getItem('language') == 'en') {options["vote_count.gte"] = 300;}
     else {options["vote_count.gte"] = 0;}
-    console.log(options["vote_count.gte"])
-    options["vote_average.gte"] = 7;
+    options["vote_average.gte"] = parseInt(localStorage.getItem('rating'),10);
+    //console.log(options["vote_count.gte"])
     options.with_original_language = options.language = localStorage.getItem('language');
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
     options["primary_release_date.gte"] = localStorage.getItem('date');
@@ -86,6 +86,7 @@ function successFunction(movies){
     //console.log(movieNumber);
     //console.log(movies.results[movieNumber]);
 
+    rating = movies.results[movieNumber].vote_average;
     title = movies.results[movieNumber].title;
     poster = "https://image.tmdb.org/t/p/w400"+movies.results[movieNumber].poster_path;
     releaseDate = movies.results[movieNumber].release_date;
