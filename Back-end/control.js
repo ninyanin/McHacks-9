@@ -5,6 +5,9 @@ var dates = [];
 var watchOps = [];
 var streaming = [];
 
+
+document.getElementById("subquestion").style.visibility = "hidden";
+
 function numMov(){
 numMovie = document.querySelector('input[name="num"]:checked').value;
 console.log(numMovie);
@@ -67,6 +70,7 @@ function getWatchOp() {
     if (document.getElementById("streaming").checked) {
         temp=document.getElementById("streaming").value;
         watchOps.push(temp);
+        document.getElementById("subquestion").style.visibility = "visible";
     }
 
     if (document.getElementById("dvd").checked) {
