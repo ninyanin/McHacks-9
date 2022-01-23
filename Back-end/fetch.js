@@ -49,8 +49,6 @@ function rottenTom() {
 }
 
 
-
-
 function getChoices() {
     options = {};
     options["vote_count.gte"] = 400;
