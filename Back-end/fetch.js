@@ -30,6 +30,10 @@ function successFunction(movies){
     overview = movies.results[movieNumber].overview;
     console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview);
 
+    document.getElementById("title").innerHTML = title;
+    document.getElementById("suggestion1").innerHTML.src = poster;
+    document.getElementById("overview").innerHTML = overview;
+    
     //alert(result);
     //console.log(result);
 }
