@@ -41,15 +41,8 @@ function successFunction(movies){
     
     console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview);
 
-    var img = new Image(); 
-    var div = document.getElementById("suggestion1"); 
-     
-    img.onload = function() { 
-      div.appendChild(img); 
-    }; 
-     
-    img.src = 'path/to/image.jpg' 
 
+    document.getElementById("suggestion1").src = poster;
     document.getElementById("title").innerText = title;
     document.getElementById("date").innerText = releaseDate;
     document.getElementById("genre").innerText = genreID;
