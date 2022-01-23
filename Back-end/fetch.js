@@ -107,6 +107,7 @@ function successFunction(movies){
     document.getElementById("suggestion1").src = poster;
     document.getElementById("title").innerText = title;
     document.getElementById("date").innerText = releaseDate;
+    document.getElementById("rating").innerText = rating;
     temp = parseInt(localStorage.getItem("genre"),10);
     var genreee;
     if(temp == 28){
