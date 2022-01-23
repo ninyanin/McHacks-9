@@ -9,24 +9,20 @@
         <title id = "Hard-Coded Question 1">Question 1</title>
     </head> 
     <body>
-        <script src="../Back-end/control.js"></script>
-
         <h1> Choose Me a Movie </h1>
         
         <div class="question1" id="question">
             <label class="center">Which genres are you interested in? <br> (Select all that apply)</label> <br>
             <form class="checkboxes" id="checkboxes">
-                <label class="left"><input name = genre id="action" type="checkbox" value = "action">Action &#128299</label><br>
-                <label class="left"><input name = genre id="comedy" type="checkbox" value = "comedy">Comedy &#129315</label><br>
-                <label class="left"><input name = genre id="drama" type="checkbox" value = "drama">Drama &#x1F622</label><br>
-                <label class="left"><input name = genre id="romance" type="checkbox" value = "romance">Romance &#128525</label><br>
-                <label class="left"><input name = genre id="mystery" type="checkbox" value = "mystery">Mystery &#129488</label><br>
-                <label class="left"><input name = genre id="fantasy" type="checkbox" value = "fantasy">Fantasy &#129497</label><br>
-                <label class="left"><input name = genre id="horror" type="checkbox" value = "horror">Horror &#128128</label>
+                <label class="left"><input name = "genre" id="action" type="checkbox" value = "action">Action &#128299</label><br>
+                <label class="left"><input name = "genre" id="comedy" type="checkbox" value = "comedy">Comedy &#129315</label><br>
+                <label class="left"><input name = "genre" id="drama" type="checkbox" value = "drama">Drama &#x1F622</label><br>
+                <label class="left"><input name = "genre" id="romance" type="checkbox" value = "romance">Romance &#128525</label><br>
+                <label class="left"><input name = "genre" id="mystery" type="checkbox" value = "mystery">Mystery &#129488</label><br>
+                <label class="left"><input name = "genre" id="fantasy" type="checkbox" value = "fantasy">Fantasy &#129497</label><br>
+                <label class="left"><input name = "genre" id="horror" type="checkbox" value = "horror">Horror &#128128</label>
             </form>
-        </div>
-
-        <button id="previous1" type="submit" style="margin-top: 10px; position: block;" onclick="document.location='./welcome page.html'">Previous</button>
-        <button id="next1" type="submit" style="margin-top: -50px; position: block;"onclick="genre();document.location='./hquestion2.html'">Next</button>
-    
+     </div>
+     <button id="previous" type="submit" style="margin-top: 10px; position: block;" onclick="document.location='./welcome page.html'">Previous</button>
+     <button id="next" type="submit" style="margin-top: -50px; position: block;"onclick="genre();document.location='./hquestion2.html'">Next</button>
 </html>

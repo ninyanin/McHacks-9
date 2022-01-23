@@ -1,92 +1,63 @@
-var numMovie;
+var numMovie = 0; 
 var genres = [];
 var checkboxes;
 var dates = [];
-var watchOps = [];
 var streaming = [];
+var rating;
 
-function numMov(){
-numMovie = document.querySelector('input[name="num"]:checked').value;
-console.log(numMovie);
+function hideSub() {
+    document.getElementById("subquestion1").style.visibility = "hidden";
+}
+
+function showSub() {
+    document.getElementById("subquestion1").style.visibility = "visible";
+}
+
+function numMov() {
+    localStorage.setItem("numMovie", document.querySelector('input[name="num"]:checked').value);
+    console.log(localStorage.getItem("numMovie"));
 }
 
 function genre() {
     checkboxes = document.getElementsByName('genre');
-    for(var i=0, n=checkboxes.length;i<n;i++){
-        if(checkboxes[i].checked){
+    for (var i = 0, n = checkboxes.length; i < n; i++) {
+        if (checkboxes[i].checked) {
             genres.push(checkboxes[i].value);
         }
     }
+    localStorage.setItem("genres", genres);
+    console.log(localStorage.getItem("numMovie"));
+    console.log(localStorage.getItem("genres"));
 }
 
-function getDate() {
-    if (document.getElementById("2020").checked) {
-        temp=document.getElementById("2020").value;
-        dates.push(temp);
+function date() {
+    da = document.getElementsByName('date');
+    for (var i = 0, n = da.length; i < n; i++) {
+        if (da[i].checked) {
+            dates.push(da[i].value);
+        }
     }
-
-    if (document.getElementById("2010").checked) {
-        temp=document.getElementById("2010").value;
-        dates.push(temp);
-    }
-
-    if (document.getElementById("2000").checked) {
-        temp=document.getElementById("2000").value;
-        dates.push(temp);
-    }
-
-    if (document.getElementById("1990").checked) {
-        temp=document.getElementById("1990").value;
-        dates.push(temp);
-    }
-
-    if (document.getElementById("1980").checked) {
-        temp=document.getElementById("1980").value;
-        dates.push(temp);
-    }
-
-    if (document.getElementById("before").checked) {
-        temp=document.getElementById("before").value;
-        dates.push(temp);
-    }
-
-    if (document.getElementById("dc").checked) {
-        temp=document.getElementById("dc").value;
-        dates.push(temp);
-    }
-
-    console.log(dates);
-}
-
-function getWatchOp() {
-    if (document.getElementById("theaters").checked) {
-        temp=document.getElementById("theaters").value;
-        watchOps.push(temp);
-    }
-
-    if (document.getElementById("netflix").checked) {
-        temp=document.getElementById("netflix").value;
-        watchOps.push(temp);
-    }
-
-    if (document.getElementById("dvd").checked) {
-        temp=document.getElementById("dvd").value;
-        watchOps.push(temp);
-    }
-    console.log(watchOps);
+    localStorage.setItem("dates", dates);
+    console.log(localStorage.getItem("genres"));
+    console.log(localStorage.getItem("numMovie"));
+    console.log(localStorage.getItem("dates"));
 }
 
 function getStream() {
-    if (document.getElementById("netflix").checked) {
-        temp=document.getElementById("netflix").value;
-        streaming.push(temp);
+    opp = document.getElementsByName('stream');
+    for (var i = 0, n = opp.length; i < n; i++) {
+        if (opp[i].checked) {
+            streaming.push(opp[i].value);
+        }
     }
-
-    if (document.getElementById("amazon").checked) {
-        temp=document.getElementById("amazon").value;
-        streaming.push(temp);
-    }
-    console.log(streaming);
+    localStorage.setItem("streaming", streaming);
+    console.log(localStorage.getItem("dates"));
+    console.log(localStorage.getItem("genres"));
+    console.log(localStorage.getItem("streaming"));
 }
   
+function rottenTom() {
+    localStorage.setItem("rating", document.querySelector('input[name="rating"]:checked').value);
+    console.log(localStorage.getItem("rating"));
+}
 

@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title id = "haha"> Choose Me a Movie</title>
-        <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-        <script src="../Back-end/control.js"></script>
-        <link rel="stylesheet" href="./styles/Graphics.css">
-    </head> 
-    <body>
-        <h1> Choose Me a Movie </h1>
-    </body>
-    <main>
-        <form class="question1" id="question" action="_blank">
-            <label class="center">How many movies do you want?</label> <br>
-            <label class="center"><input id="1" name="num"  type="radio" onchange="numMov()" value = "1">1</label><br>
-            <label class="center"><input id="2" name="num"  type="radio" onchange="numMov()" value = "2">2</label><br>
-            <label class="center"><input id="3" name="num"  type="radio" onchange="numMov()" value = "3">3</label>
-        </form>
-        <button id="next" type="submit" onclick= "document.location='./hquestion1.html'">Next</button>
-       
-    </main>
+
+<head>
+    <meta charset="utf-8">
+    <title id="haha"> Choose Me a Movie</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <script src="../Back-end/control.js"></script>
+    <link rel="stylesheet" href="./styles/Graphics.css">
+</head>
+
+<body>
+    <h1> Choose Me a Movie </h1>
+</body>
+<main>
+    <form class="question1" id="question" action="_blank">
+        <label class="center">How many movies do you want?</label> <br>
+        <label class="center"><input id="1" name="num" type="radio" onchange="numMov()" value="1">1</label><br>
+        <label class="center"><input id="2" name="num" type="radio" onchange="numMov()" value="2">2</label><br>
+        <label class="center"><input id="3" name="num" type="radio" onchange="numMov()" value="3">3</label>
+    </form>
+    <button id="next" type="submit" onclick="document.location='./hquestion1.html'">Next</button>
+
+</main>
+
 </html>
