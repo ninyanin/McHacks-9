@@ -84,17 +84,20 @@ input[type=radio] {
 #previous1{
     font-size: 30px;
     font-family: "Oswald", sans-serif;
-    display: inline-block;
-    align-self: left;
-    margin-left: 40px;
+    margin-left: 500px;
+    margin-top: -50px;
+    display: block;
+    
+
 }
 #random{
     font-size: 30px;
     font-family: "Oswald", sans-serif;
-    align-self: right;
-    margin-left: 80%;
-    margin-bottom: -50px;
-    text-align: center;
+    margin-left: 1000px;
+    margin-top: 20px; 
+    
+    
+
 }
 #suggestion1{ 
     position: block;
@@ -103,10 +106,10 @@ input[type=radio] {
     margin-left: 50px;
 }
 #return{
-    align-self: center;
-    text-align: center;
     font-size: 30px;
-    margin-left: 350px;
+    margin-left: 720px;
+    display: block;
+    margin-top: -52px;
     font-family: "Oswald", sans-serif;
 }
 
