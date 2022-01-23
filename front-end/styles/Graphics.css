@@ -85,11 +85,14 @@ input[type=radio] {
     font-size: 30px;
     font-family: "Oswald", sans-serif;
     margin-left: 40px;
+    margin-top: 100px;
 }
 #random{
     font-size: 30px;
     font-family: "Oswald", sans-serif;
     margin-left: 800px;
+    position: block;
+    margin-top: 30px;
 }
 #suggestion1{
     position: block;
