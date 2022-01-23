@@ -14,7 +14,7 @@ function getChoices() {
     options.with_watch_providers = [8 || 9];               //list of streaming services (see discord #back end for IDs) 
     theMovieDb.discover.getMovies(options, successFunction, errorFunction);
 }
-
+// "genres" "rate" "streaming" "date"
 //localStorage.getItem("genres")
 function successFunction(movies){
     movies = JSON.parse(movies);
