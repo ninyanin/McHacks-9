@@ -1,6 +1,5 @@
 var numMovie = 0; 
 var genres = [];
-localStorage.setItem("genres", []);
 var checkboxes;
 var dates = [];
 var streaming = [];
@@ -52,8 +51,8 @@ function getStream() {
         }
     }
     localStorage.setItem("streaming", streaming);
-    console.log(localStorage.getItem("genres"));
     console.log(localStorage.getItem("dates"));
+    console.log(localStorage.getItem("genres"));
     console.log(localStorage.getItem("streaming"));
 }
   
