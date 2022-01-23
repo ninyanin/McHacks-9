@@ -4,6 +4,53 @@
 //options = {"primary_release_year":2010}
 //const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
 
+var numMovie = 0; 
+var genres = [];
+var dates = [];
+var streaming = [];
+
+function hideSub() {
+    document.getElementById("subquestion1").style.visibility = "hidden";
+}
+
+function showSub() {
+    document.getElementById("subquestion1").style.visibility = "visible";
+}
+
+function numMov() {
+    localStorage.setItem("numMovie", document.querySelector('input[name="num"]:checked').value);
+    console.log(localStorage.getItem("numMovie"));
+}
+
+function genre() {
+    localStorage.setItem("genre", document.querySelector('input[name="genre"]:checked').value);
+    console.log(localStorage.getItem("numMovie"));
+    console.log(localStorage.getItem("genre"));
+}
+
+function date() {
+    localStorage.setItem("date", document.querySelector('input[name="date"]:checked').value);
+    console.log(localStorage.getItem("numMovie"));
+    console.log(localStorage.getItem("genre"));
+    console.log(localStorage.getItem("date"));
+}
+
+function getStream() {
+    localStorage.setItem("stream", document.querySelector('input[name="stream"]:checked').value);
+    console.log(localStorage.getItem("numMovie"));
+    console.log(localStorage.getItem("genre"));
+    console.log(localStorage.getItem("date"));
+    console.log(localStorage.getItem("stream"));
+}
+  
+function rottenTom() {
+    localStorage.setItem("rating", document.querySelector('input[name="rating"]:checked').value);
+    console.log(localStorage.getItem("rating"));
+}
+
+
+
+
 function getChoices() {
     options = {};
     options["vote_count.gte"] = 400;
@@ -47,6 +94,7 @@ function successFunction(movies){
     document.getElementById("date").innerText = releaseDate;
     document.getElementById("genre").innerText = genreID;
     document.getElementById("overview").innerText = overview;
+    document.getElementById("poster").innerText = poster;
 
     //alert(result);
     //console.log(result);
