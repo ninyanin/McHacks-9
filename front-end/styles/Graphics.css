@@ -74,6 +74,8 @@ input[type=radio] {
 }
 #suggestionText{
     font-size: 20px;
+    text-align: left;
+    margin-left: 400px;
     font-family: "Oswald", sans-serif;
     color:darkviolet;
 }
