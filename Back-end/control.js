@@ -17,7 +17,7 @@ function genre() {
             genres.push(checkboxes[i].value);
         }
     }
-}
+}-
 
 function getDate() {
     if (document.getElementById("2020").checked) {
