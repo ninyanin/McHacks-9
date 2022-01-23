@@ -39,35 +39,22 @@ function date() {
         }
     }
     localStorage.setItem("dates", dates);
+    console.log(localStorage.getItem("genres"));
     console.log(localStorage.getItem("numMovie"));
-    console.log(localStorage.getItem("genres"));
     console.log(localStorage.getItem("dates"));
 }
-
-function formatType(){
-    opp = document.getElementsByName('op');
-    for (var i = 0, n = opp.length; i < n; i++) {
-        if (opp[i].checked) {
-            watchOps.push(opp[i].value);
-        }
-    }
-    localStorage.setItem("watchOps", watchOps);
-    console.log(localStorage.getItem("genres"));
-    console.log(localStorage.getItem("dates"));
-}
-
 
 function getStream() {
-    if (document.getElementById("netflix").checked) {
-        temp=document.getElementById("netflix").value;
-        streaming.push(temp);
+    opp = document.getElementsByName('stream');
+    for (var i = 0, n = opp.length; i < n; i++) {
+        if (opp[i].checked) {
+            streaming.push(opp[i].value);
+        }
     }
-
-    if (document.getElementById("amazon").checked) {
-        temp=document.getElementById("amazon").value;
-        streaming.push(temp);
-    }
-    console.log(streaming);
+    localStorage.setItem("streaming", streaming);
+    console.log(localStorage.getItem("genres"));
+    console.log(localStorage.getItem("dates"));
+    console.log(localStorage.getItem("streaming"));
 }
   
 function rottenTom() {
