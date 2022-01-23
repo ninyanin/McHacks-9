@@ -4,6 +4,7 @@ var checkboxes;
 var dates = [];
 var watchOps = [];
 var streaming = [];
+var rating;
 
 function hideSub() {
     document.getElementById("subquestion1").style.visibility = "hidden";
@@ -98,4 +99,8 @@ function getStream() {
     console.log(streaming);
 }
   
+function rottenTom() {
+    localStorage.setItem("rating", document.querySelector('input[name="rating"]:checked').value);
+    console.log(localStorage.getItem("rating"));
+}
 
