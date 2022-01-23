@@ -15,22 +15,22 @@
         <div class="question3" id="question">
             <label class="center">Do you want to watch the movie at the theatres, on streaming or on DVD? </label> <br>
             <form class="checkboxes" id="checkboxes">
-                <label class="left"><input type="checkbox">Theatres</label><br>
-                <label class="left"><input type="checkbox">Streaming</label><br>
-                <label class="left"><input type="checkbox">DVD</label> <br> <br>
+                <label class="left"><input type="checkbox" id="theatres" value="Theatres">Theatres</label><br>
+                <label class="left"><input type="checkbox" id="streaming" value="Streaming">Streaming</label><br>
+                <label class="left"><input type="checkbox" id="dvd" value="DVD">DVD</label> <br> <br>
             </form>
             
             <div class="subquestion" id="subquestion">
                 <label class="center">Which streaming services do you have? <br> (Select all that apply) </label> <br>
                 <form class="subcheckboxes" id="subcheckboxes">
-                    <label class="left"><input type="checkbox">Netflix</label><br>
-                    <label class="left"><input type="checkbox">Amazon Prime</label>
+                    <label class="left"><input type="checkbox" id="netflix" value="Netlfix">Netflix</label><br>
+                    <label class="left"><input type="checkbox" id="amazon" value="Amazon Prime">Amazon Prime</label>
                 </form>
             </div>
             
         </div>
 
         <button id="previous" type="submit" style="margin-top: 20px;" onclick="document.location='./hquestion2.html'">Previous</button>
-        <button id="next" type="submit" style="margin-top: -50px; position: block;" onclick="document.location='./hquestion4.html'">Next</button>
+        <button id="next" type="submit" style="margin-top: -50px; position: block;" onclick="document.location='./hquestion4.html'; getWatchOp() ; getStream()">Next</button>
     
 </html>
