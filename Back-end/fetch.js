@@ -49,8 +49,6 @@ function rottenTom() {
 }
 
 
-
-
 function getChoices() {
     options = {};
     options["vote_count.gte"] = 400;
@@ -87,7 +85,6 @@ function successFunction(movies){
     overview = movies.results[movieNumber].overview;    
     
     console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview);
-
 
     document.getElementById("suggestion1").src = poster;
     document.getElementById("title").innerText = title;
