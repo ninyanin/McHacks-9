@@ -16,12 +16,12 @@
             <label class="center">Do you want to watch the movie at the theatres, on streaming or on DVD? </label> <br>
             <form class="checkboxes" id="checkboxes">
                 <label class="left"><input type="checkbox" name="op" id="theatres" value="Theatres">Theatres</label><br>
-                <label class="left"><input type="checkbox" name="op" id="streaming" value="Streaming">Streaming</label><br>
+                <label class="left"><input type="checkbox" name="op" id="streaming" value="Streaming" onchange="showSub()">Streaming</label><br>
                 <label class="left"><input type="checkbox" name="op" id="dvd" value="DVD">DVD</label> <br> <br>
             </form>
             
             <div class="subquestion" id="subquestion">
-                <label class="center">Which streaming services do you have? <br> (Select all that apply) </label> <br>
+                <label class="center" id="subquestion1">Which streaming services do you have? <br> (Select all that apply) </label> <br>
                 <form class="subcheckboxes" id="subcheckboxes">
                     <label class="left"><input type="checkbox" name="stream" id="netflix" value="Netlfix">Netflix</label><br>
                     <label class="left"><input type="checkbox" name="stream" id="amazon" value="Amazon Prime">Amazon Prime</label>

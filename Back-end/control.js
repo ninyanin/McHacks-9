@@ -5,8 +5,13 @@ var dates = [];
 var watchOps = [];
 var streaming = [];
 
+function hideSub() {
+    document.getElementById("subquestion1").style.visibility = "hidden";
+}
 
-document.getElementById("subquestion").style.visibility = "hidden";
+function showSub() {
+    document.getElementById("subquestion1").style.visibility = "visible";
+}
 
 function numMov(){
 numMovie = document.querySelector('input[name="num"]:checked').value;
@@ -70,7 +75,6 @@ function getWatchOp() {
     if (document.getElementById("streaming").checked) {
         temp=document.getElementById("streaming").value;
         watchOps.push(temp);
-        document.getElementById("subquestion").style.visibility = "visible";
     }
 
     if (document.getElementById("dvd").checked) {
