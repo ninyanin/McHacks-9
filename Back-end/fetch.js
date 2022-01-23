@@ -52,6 +52,7 @@ function rottenTom() {
 function getChoices() {
     options = {};
     options["vote_count.gte"] = 400;
+    options["vote_average.gte"] = 7;
     options.with_original_language = options.language = localStorage.getItem('language');
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
     options["primary_release_date.gte"] = localStorage.getItem('date');
@@ -63,7 +64,16 @@ function getChoices() {
     //options.with_watch_providers = [8 || 9];               //list of streaming services (see discord #back end for IDs) 
     theMovieDb.discover.getMovies(options, successFunction, errorFunction);
 }
+/*
+function getInfo(id){
+    theMovieDb.movies.getDetails(id, infoSuccess, errorFunction);
+}
 
+function infoSuccess(info){
+    info = JSON.parse(movies);
+    ratings = info.
+}
+*/
 // "genres" "rate" "streaming" "date"
 //localStorage.getItem("genres")
 function successFunction(movies){
@@ -72,6 +82,7 @@ function successFunction(movies){
     console.log(length);
     //length = Object.keys(movies).length;
     movieNumber = Math.floor(Math.random() * (Math.min(20,length/10)));
+    //getInfo(movies.results[movieNumber].id);
     console.log(movieNumber);
 
     //console.log(movies);
