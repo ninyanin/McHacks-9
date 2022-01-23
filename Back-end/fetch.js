@@ -7,7 +7,7 @@ const range = (start, stop, step) => Array.from({ length: (stop - start) / step 
 function getChoices() {
     options = {};
     options["vote_count.gte"] = 400;
-    options.primary_release_year = range(1980, 1990, 1);   //range of release year
+    //options.primary_release_year = range(1980, 1990, 1);   //range of release year
     options.with_genres = [10749 || 16 || 12];             //list of genres
     options.watch_region = "CA";       
     options.with_watch_providers = [8 || 9];               //list of streaming services (see discord #back end for IDs) 
@@ -15,10 +15,18 @@ function getChoices() {
 
 }
 
-function successFunction(result){
-    data = JSON.parse(result);
+function successFunction(movies){
+    movies = JSON.parse(movies);
+    length = movies.total_results;
+    console.log(length);
+    //length = Object.keys(movies).length;
+    movieNumber = Math.floor(Math.random() * (length/10));
+    //console.log(movies);
+    console.log(movieNumber);
+    console.log(movies.results[movieNumber]);
+
     //alert(result);
-    console.log(result);
+    //console.log(result);
 }
 
 function errorFunction(result){
