@@ -88,4 +88,11 @@ input[type=radio] {
     margin-left: 170px;
 
 }
+#random{
+    margin-top: 70px;
+    font-size: 30px;
+    margin-left: 90%;
+    display: block;
+    font-family: "Oswald", sans-serif;
+}
 
