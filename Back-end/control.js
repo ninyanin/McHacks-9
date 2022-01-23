@@ -17,41 +17,24 @@ function numMov() {
 }
 
 function genre() {
-    checkboxes = document.getElementsByName('genre');
-    for (var i = 0, n = checkboxes.length; i < n; i++) {
-        if (checkboxes[i].checked) {
-            genres.push(checkboxes[i].value);
-        }
-    }
-    localStorage.setItem("genres", genres);
+    localStorage.setItem("genre", document.querySelector('input[name="genre"]:checked').value);
     console.log(localStorage.getItem("numMovie"));
-    console.log(localStorage.getItem("genres")[1]);
+    console.log(localStorage.getItem("genre"));
 }
 
 function date() {
-    da = document.getElementsByName('date');
-    for (var i = 0, n = da.length; i < n; i++) {
-        if (da[i].checked) {
-            dates.push(da[i].value);
-        }
-    }
-    localStorage.setItem("dates", dates);
-    console.log(localStorage.getItem("genres"));
+    localStorage.setItem("date", document.querySelector('input[name="date"]:checked').value);
     console.log(localStorage.getItem("numMovie"));
-    console.log(localStorage.getItem("dates")[0]);
+    console.log(localStorage.getItem("genre"));
+    console.log(localStorage.getItem("date"));
 }
 
 function getStream() {
-    opp = document.getElementsByName('stream');
-    for (var i = 0, n = opp.length; i < n; i++) {
-        if (opp[i].checked) {
-            streaming.push(opp[i].value);
-        }
-    }
-    localStorage.setItem("streaming", streaming);
-    console.log(localStorage.getItem("dates"));
-    console.log(localStorage.getItem("genres"));
-    console.log(localStorage.getItem("streaming"));
+    localStorage.setItem("stream", document.querySelector('input[name="stream"]:checked').value);
+    console.log(localStorage.getItem("numMovie"));
+    console.log(localStorage.getItem("genre"));
+    console.log(localStorage.getItem("date"));
+    console.log(localStorage.getItem("stream"));
 }
   
 function rottenTom() {
