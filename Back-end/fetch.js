@@ -99,7 +99,6 @@ function successFunction(movies){
     document.getElementById("date").innerText = releaseDate;
     document.getElementById("genre").innerText = genreID;
     document.getElementById("overview").innerText = overview;
-    document.getElementById("poster").innerText = poster;
 
     //alert(result);
     //console.log(result);
