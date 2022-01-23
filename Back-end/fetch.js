@@ -54,7 +54,7 @@ function getChoices() {
     options["vote_count.gte"] = 400;
     options.with_original_language = "en";
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
-    options["primary_release_date.gte"] = "1990-01-01";
+    options["primary_release_date.gte"] = parseInt(localStorage.getItem('date'),10);;
     //chosenGenres = localStorage.getItem("genres");
     options.with_genres = parseInt(localStorage.getItem('genre'),10);             //list of genres
     //options.with_genres = [10749 || 16 || 12];           //list of genres
