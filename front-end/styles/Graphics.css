@@ -73,11 +73,11 @@ input[type=radio] {
     color:darkviolet;
 }
 #suggestionText{
-    font-size: 20px;
+    font-size: 35px;
     text-align: left;
-    margin-left: 700px;
+    margin-left: 500px;
     margin-right: 100px;
-    margin-top: -300px;
+    margin-top: -450px;
     font-family: "Oswald", sans-serif;
     color:darkviolet;
 }
@@ -93,6 +93,7 @@ input[type=radio] {
 }
 #suggestion1{
     position: block;
+    margin-top: 10px;
     margin-right: 650px;
 }
 
