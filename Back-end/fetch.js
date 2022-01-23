@@ -9,7 +9,9 @@ function getChoices() {
     options["vote_count.gte"] = 400;
     options.with_original_language = "en";
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
+    chosenGenres = localStorage.getItem("genres");
     options.with_genres = [10749 || 16 || 12];             //list of genres
+    //options.with_genres = [10749 || 16 || 12];           //list of genres
     options.watch_region = "CA";       
     options.with_watch_providers = [8 || 9];               //list of streaming services (see discord #back end for IDs) 
     theMovieDb.discover.getMovies(options, successFunction, errorFunction);
