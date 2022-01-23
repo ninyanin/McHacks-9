@@ -52,7 +52,7 @@ function rottenTom() {
 function getChoices() {
     options = {};
     options["vote_count.gte"] = 400;
-    options.with_original_language = "en";
+    options.with_original_language = options.language = "en";
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
     options["primary_release_date.gte"] = parseInt(localStorage.getItem('date'),10);;
     //chosenGenres = localStorage.getItem("genres");
