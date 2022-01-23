@@ -1,9 +1,7 @@
 var numMovie = 0; 
 var genres = [];
-var checkboxes;
 var dates = [];
 var streaming = [];
-var rating;
 
 function hideSub() {
     document.getElementById("subquestion1").style.visibility = "hidden";
