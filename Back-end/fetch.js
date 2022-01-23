@@ -18,7 +18,7 @@ function showSub() {
 }
 
 function language() {
-    localStorage.setItem("language", document.querySelector('input[name="num"]:checked').value);
+    localStorage.setItem("language", document.querySelector('input[name="language"]:checked').value);
     console.log(localStorage.getItem("language"));
 }
 
@@ -52,7 +52,7 @@ function rottenTom() {
 function getChoices() {
     options = {};
     options["vote_count.gte"] = 400;
-    options.with_original_language = options.language = "en";
+    options.with_original_language = options.language = localStorage.getItem('language');
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
     options["primary_release_date.gte"] = localStorage.getItem('date');
     //chosenGenres = localStorage.getItem("genres");
