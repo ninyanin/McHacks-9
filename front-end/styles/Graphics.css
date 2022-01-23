@@ -72,12 +72,21 @@ input[type=radio] {
     font-family: "Oswald", sans-serif;
     color:darkviolet;
 }
-#suggestionText{
-    font-size: 35px;
+.results{
+    display: flex;
+}
+.results .suggestion1{
+    flex: 1;
+    margin-right: 500px;
+    margin-left: 100px;
+}
+.results .suggestionText{
+    flex: 1;
+    font-size: 20px;
     text-align: left;
     margin-left: 500px;
     margin-right: 100px;
-    margin-top: -450px;
+    float: left;
     font-family: "Oswald", sans-serif;
     color:darkviolet;
 }
