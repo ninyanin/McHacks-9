@@ -77,6 +77,7 @@ input[type=radio] {
     text-align: left;
     margin-left: 700px;
     margin-right: 100px;
+    margin-top: -300px;
     font-family: "Oswald", sans-serif;
     color:darkviolet;
 }
@@ -89,5 +90,9 @@ input[type=radio] {
     font-size: 30px;
     font-family: "Oswald", sans-serif;
     margin-left: 800px;
+}
+#suggestion1{
+    position: block;
+    margin-right: 650px;
 }
 
