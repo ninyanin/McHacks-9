@@ -92,7 +92,7 @@ input[type=radio] {
 #random{
     font-size: 30px;
     font-family: "Oswald", sans-serif;
-    margin-left: 800px;
+    margin-left: 700px;
     position: block;
     margin-top: 30px;
     align-self: right;
@@ -101,6 +101,6 @@ input[type=radio] {
     position: block;
     margin-top: 10px;
     margin-right: 750px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
