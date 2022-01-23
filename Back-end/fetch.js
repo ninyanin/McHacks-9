@@ -4,12 +4,13 @@
 //options = {"primary_release_year":2010}
 
 function getChoices() {
-    //options = {};
-    options = {"vote_count.gte" : 250};
-    options.primary_release_year = 2013;
-    options.with_genres = 16, 12;
-    options.watch_region = "CA";
-    options.with_watch_providers = 8;
+    options = {};
+    options["vote_count.gte"] = 400;
+    options.primary_release_year = 2019;
+    //options["with_genres"] = 10749, 16, 12; 
+    options.with_genres = [10749 || 16 || 12];  //list of genres
+    options.watch_region = "CA";       
+    options.with_watch_providers = [8 || 9];           //list of streaming services (see discord #back end for IDs) 
     theMovieDb.discover.getMovies(options, successFunction, errorFunction);
 
 }
