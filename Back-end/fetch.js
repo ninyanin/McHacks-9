@@ -15,6 +15,7 @@ function getChoices() {
     theMovieDb.discover.getMovies(options, successFunction, errorFunction);
 }
 
+//localStorage.getItem("genres")
 function successFunction(movies){
     movies = JSON.parse(movies);
     length = movies.total_results;
