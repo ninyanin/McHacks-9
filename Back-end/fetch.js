@@ -24,15 +24,19 @@ function successFunction(movies){
     //console.log(movies);
     //console.log(movieNumber);
     //console.log(movies.results[movieNumber]);
-    title = movies.results[movieNumber].title;
-    poster = "https://image.tmdb.org/t/p/w500"+movies.results[movieNumber].poster_path;
-    genreID = movies.results[movieNumber].genre_ids[0];
-    overview = movies.results[movieNumber].overview;
-    console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview);
 
-    document.getElementById("title").innerHTML = title;
-    document.getElementById("suggestion1").src.innerHTML = poster;
-    document.getElementById("overview").innerHTML = overview;
+    const Result = {
+        title = movies.results[movieNumber].title,
+        poster = "https://image.tmdb.org/t/p/w500"+movies.results[movieNumber].poster_path,
+        genreID = movies.results[movieNumber].genre_ids[0],
+        overview = movies.results[movieNumber].overview,
+    };
+    
+    //console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview),
+
+    //document.getElementById("title").innerHTML = title;
+    //document.getElementById("suggestion1").src.innerHTML = poster;
+    //document.getElementById("overview").innerHTML = overview;
 
     //alert(result);
     //console.log(result);
