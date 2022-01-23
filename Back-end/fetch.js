@@ -54,7 +54,7 @@ function getChoices() {
     options["vote_count.gte"] = 400;
     options.with_original_language = options.language = "en";
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
-    options["primary_release_date.gte"] = parseInt(localStorage.getItem('date'),10);;
+    options["primary_release_date.gte"] = localStorage.getItem('date');
     //chosenGenres = localStorage.getItem("genres");
     options.with_genres = parseInt(localStorage.getItem('genre'),10);             //list of genres
     //options.with_genres = [10749 || 16 || 12];           //list of genres
@@ -86,12 +86,20 @@ function successFunction(movies){
     
     console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview);
 
-    document.getElementById("suggestion1").innerHTML.src = poster;
+    var img = new Image(); 
+    var div = document.getElementById("suggestion1"); 
+ 
+    img.onload = function() { 
+    div.appendChild(img); 
+    }; 
+ 
+    img.src = poster;
+    
+    document.getElementById("suggestion1").src = poster;
     document.getElementById("title").innerText = title;
     document.getElementById("date").innerText = releaseDate;
     document.getElementById("genre").innerText = genreID;
     document.getElementById("overview").innerText = overview;
-    document.getElementById("poster").src = poster;
 
     //alert(result);
     //console.log(result);
