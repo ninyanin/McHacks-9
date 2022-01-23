@@ -4,6 +4,53 @@
 //options = {"primary_release_year":2010}
 //const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1}, (_, i) => start + (i * step));
 
+var numMovie = 0; 
+var genres = [];
+var dates = [];
+var streaming = [];
+
+function hideSub() {
+    document.getElementById("subquestion1").style.visibility = "hidden";
+}
+
+function showSub() {
+    document.getElementById("subquestion1").style.visibility = "visible";
+}
+
+function numMov() {
+    localStorage.setItem("numMovie", document.querySelector('input[name="num"]:checked').value);
+    console.log(localStorage.getItem("numMovie"));
+}
+
+function genre() {
+    localStorage.setItem("genre", document.querySelector('input[name="genre"]:checked').value);
+    console.log(localStorage.getItem("numMovie"));
+    console.log(localStorage.getItem("genre"));
+}
+
+function date() {
+    localStorage.setItem("date", document.querySelector('input[name="date"]:checked').value);
+    console.log(localStorage.getItem("numMovie"));
+    console.log(localStorage.getItem("genre"));
+    console.log(localStorage.getItem("date"));
+}
+
+function getStream() {
+    localStorage.setItem("stream", document.querySelector('input[name="stream"]:checked').value);
+    console.log(localStorage.getItem("numMovie"));
+    console.log(localStorage.getItem("genre"));
+    console.log(localStorage.getItem("date"));
+    console.log(localStorage.getItem("stream"));
+}
+  
+function rottenTom() {
+    localStorage.setItem("rating", document.querySelector('input[name="rating"]:checked').value);
+    console.log(localStorage.getItem("rating"));
+}
+
+
+
+
 function getChoices() {
     options = {};
     options["vote_count.gte"] = 400;
@@ -11,10 +58,10 @@ function getChoices() {
     //options.primary_release_year = range(1980, 1990, 1); //range of release year
     options["primary_release_date.gte"] = "1990-01-01";
     //chosenGenres = localStorage.getItem("genres");
-    options.with_genres = 16;             //list of genres
+    options.with_genres = parseInt(localStorage.getItem('genre'),10);             //list of genres
     //options.with_genres = [10749 || 16 || 12];           //list of genres
     options.watch_region = "CA";       
-    options.with_watch_providers = 8;               //list of streaming services (see discord #back end for IDs) 
+    options.with_watch_providers = parseInt(localStorage.getItem('stream'),10);               //list of streaming services (see discord #back end for IDs) 
     //options.with_watch_providers = [8 || 9];               //list of streaming services (see discord #back end for IDs) 
     theMovieDb.discover.getMovies(options, successFunction, errorFunction);
 }
@@ -41,9 +88,13 @@ function successFunction(movies){
     
     console.log(title+'\n'+poster+'\n'+genreID+'\n'+overview);
 
+
+    document.getElementById("suggestion1").src = poster;
     document.getElementById("title").innerText = title;
+    document.getElementById("date").innerText = releaseDate;
     document.getElementById("genre").innerText = genreID;
     document.getElementById("overview").innerText = overview;
+    document.getElementById("poster").innerText = poster;
 
     //alert(result);
     //console.log(result);
